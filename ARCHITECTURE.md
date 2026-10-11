@@ -3,28 +3,38 @@
 ## System Overview
 
 User
+
   ↓
+
 Frontend (Framework to be confirmed)
+
   ↓
+
 Laravel Backend / REST API
+
   ↓
+
 MySQL Database (XAMPP - Local Development)
 
-External Services:
+### External Services
+
 - AWS Cognito → Authentication (subject to approval)
 - AWS API Gateway → API access (subject to approval)
 - AWS Lambda → Backend execution (subject to approval)
 - Amazon RDS → Cloud database (subject to approval)
 - Amazon SNS → Notifications (subject to approval)
 - GitHub → Version control
-- AWS CloudWatch → Monitoring (if approved)
 
 ## Project Structure
 
 /app
   # Laravel application code
-  /Http/Controllers  # API request handling
-  /Models            # Eloquent database models
+
+  /Http/Controllers
+    # API request handling
+
+  /Models
+    # Eloquent database models
 
 /routes
   # API route definitions
@@ -91,12 +101,12 @@ Potential AWS services:
 - AWS Lambda → Backend execution, if compatible with the approved design
 - Amazon RDS → Managed MySQL database
 - Amazon SNS → Notifications
-- AWS CloudWatch → Monitoring
 
 These services are proposed options and are not considered implemented
 until configured and tested.
 
 Laravel and AWS Lambda require a compatible deployment approach.
+
 The final backend hosting method must be confirmed before migration.
 
 ## Security
